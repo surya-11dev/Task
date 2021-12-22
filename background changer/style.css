@@ -1,0 +1,31 @@
+html, body { height: 100% }
+
+
+
+body {
+  margin: 0 auto;
+  /* background: grey; */
+  text-align: center;
+  margin-top: 200px;
+  background-image: url("https://images.unsplash.com/photo-1639867729915-1528e2024a29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60");
+  background-size: cover;
+  background-position: center center;
+}
+
+
+input[type="file"] {
+  display: none
+}
+
+button {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 50px;
+  font-family: calibri light;
+  letter-spacing: 2px;
+  font-size: 25px;
+  background: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 25px;
+  cursor: pointer;
+}

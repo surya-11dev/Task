@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse">
+            <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar-collapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container-fluid">
+      <div id="home" class=" sections container">
+      
+      <h2 class="text-center">Welcome to my <span class="title_highlight">PORTFOLIO</span></h2>
+      <div class="row">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <h2 class="text-center">My name is <span class="title_highlight">Preetha Ramakrishnan</span>. I'm a front-end web developer based in San Diego.</h2>
+            </div>
+            <div class="item">
+               <h2 class="text-center">Currently I am freelancing making wordpress sites, but I also like to learn various Javascript technologies. </h2>
+            </div>
+            <div class="item">
+                <h2 class="text-center">My passion is to hand-code user centered, responsive websites using HTML, CSS, Javascript/jQuery.</h2>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>  
+      </div>
+    </div>
+    
+    <div id="about" class=" sections container">
+      <h3 class="text-center">ABOUT ME</h3>
+      <div class="avatar row">
+        <img class="img-thumbnail" src="https://images.unsplash.com/photo-1421885641996-b1f3d004d401?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=0ed6eb1757d94743660d7beb1ccffac7" alt="">
+      </div>
+      <div class="row bio text-center">
+        <p>I am a freelance web developer based in San Diego. I love building websites from scratch or in wordpress for small-business or Non-Profit organizations. When I'm not working I like to learn Javascript by going to workshops or taking classes. My ambition is to become a fulltime Javascript developer someday.</p>
+      </div>
+      <div id="skills" class="row">
+        <div class="col-md-4 col-xs-6 text-center">
+           <img src="https://drive.google.com/uc?export=view&id=1JHx7AuprBWg_VGEnw75u7UudxZbIKm7v" alt="html5" class="img-responsive">
+        </div>
+        <div class="col-md-4 col-xs-6 text-center">
+           <img src="http://gdurl.com/Pcf3" alt="css3" class="img-responsive">
+        </div>
+        <div class="col-md-4 col-xs-6 text-center">
+           <img src="http://gdurl.com/F-je" alt="javascript" class="img-responsive">
+        </div>
+        <div class="col-md-4 col-xs-6 text-center">
+           <img src="http://gdurl.com/hUtX" alt="jquery" class="img-responsive">
+        </div>
+        <div class="col-md-4 col-xs-6 text-center">
+           <img src="http://gdurl.com/prON" alt="bootstrap" class="img-responsive">
+        </div>
+        <div class="col-md-4 col-xs-6 text-center">
+           <img src="http://gdurl.com/CETA" alt="sass" class="img-responsive">
+        </div>
+       
+      </div>
+    </div>
+    
+    <div id="projects" class=" sections container">
+      <div class="row">
+        <h3 class="text-center">PROJECTS</h3>
+        <h4>These are some of the pet projects I have created in the past using either Wordpress, javascript or plain hand-coding using some of the web-technologies listed above. I am hoping to add more projects as I complete in freecodecamp.</h4>
+      </div>
+      <div class="row">
+        <div class="col-md-4 project">
+          <a href="http://jobstar.prdesignerstudio.com/">
+            <img src="http://prdesignerstudio.com/images/web_gallery/jobstar_thumb.png" alt="jobstar website" class="img-responsive">
+          </a>
+          <p>The jobstar website was a front-end prototype. During the making for this website I was exposed to all layers of UX including comp-analysis, mood boards, user-centered designing etc. This prototype was built using pure HTML, CSS and Javascript.</p>
+        </div>
+        <div class="col-md-4 project">
+          <a href="http://freshplate.servicefocuseddesign.com/">
+            <img src="http://prdesignerstudio.com/images/web_gallery/freshplate_thumb.png" class="img-responsive">
+          </a>
+          <p>The freshplate framework was a team effort and final capstone project for my Front-End Web development certificate program in SDCE. Here we offer a light-weight open source framework for anyone to easily build amazing responsive websites. The documentation page on the framework website gives useful demos and how to incorporate the javascript components.</p>
+        </div>
+        <div class="col-md-4 project">
+          <a href="http://prdesignerstudio.com/pages/jsDemos/drum_kit/drumKit.html">
+            <img src="http://gdurl.com/EDyR" alt="a drumkit using javascript" class="img-responsive">
+          </a>
+          <p>One of my learning methods is to take on javascripts challenges. This drum-kit was one such pet project I picked up. Its made using vanilla Javascript (ES-6) format. I am a big fan of vanilla javascript and what it can achieve, without using any bulky frameworks.</p>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div id="contact" class=" sections container">
+      <div class="row pad">
+        <h3 class="text-center">CONNECT WITH ME</h3>
+        <h4 class="text-center">You can follow me on social media or send me a message using the below form.</h4>
+      </div>
+      <div class="row contactContent">
+        
+        <div class="col-md-6">
+             <form>
+        <div class="form-group">
+          <label for="name" class="col-form-label">Name:
+          <input type="text" placeholder="Enter full name" id="name" class="form-control">
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-form-label">Email:
+          <input type="email" placeholder="name@xyz.com" id="email" class="form-control">
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="message"  class="col-form-label">Message:
+            <textarea placeholder="enter your message" id="message" class="form-control"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn text-center">Send Message</button>
+      
+      </form>
+        </div>
+        
+        <div class="socialIcons">
+          <div class="col-md-3 col-xs-6 text-center social">
+          <a href="https://www.linkedin.com/in/preetha-ramakrishnan-07b1891/">
+            <img src="https://drive.google.com/uc?export=view&id=1Yz3c1JY2BkzgcRQdOKjvPrOprO1h9Gy_" alt="linked-in" class="img-responsive">
+          </a>
+        </div>
+        <div class="col-md-3 col-xs-6 text-center social">
+          <a href="http://www.prdesignerstudio.com">
+            <img src="https://drive.google.com/uc?export=view&id=1MygKIMwiS67KHoMjDczV0AMjom7DMbQB" alt="portfolio website" class="img-responsive">
+          </a>
+        </div>
+        <div class="col-md-3 col-xs-6 text-center social">
+          <a href="https://github.com/preetha5/">
+            <img src="https://drive.google.com/uc?export=view&id=1nLtcWdcL37f97fnZJOmYuOKfovA1OjOX" alt="github" class="img-responsive">
+          </a>
+        </div>
+        <div class="col-md-3 col-xs-6 text-center social">
+          <a href="https://codepen.io/preeth_5/">
+            <img src="https://drive.google.com/uc?export=view&id=1GBVtsuI-VtCtEbo2Z03vYe4eiG89bJeq" alt="codepen" class="img-responsive">
+          </a>
+        </div>
+        </div>
+       
+        </div>
+        </div>
+      </div>
+    
+    
+     
+
+    <script src="script.js"></script>
+</body>
+</html>

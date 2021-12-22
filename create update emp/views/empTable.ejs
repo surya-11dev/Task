@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+<body>
+    
+    <!-- <div>
+        <button>
+            Create New! 
+        </button>
+    </div>
+    <div>
+        <button>
+            Department
+        </button>
+        <button>
+            Regulation
+        </button>
+        <button>
+            Status
+        </button>
+        <button>
+            Log out
+        </button>
+    </div> -->
+    <label>
+      Employee Details
+    </label>
+    <span style="padding-left: 1020px;">
+      <a href="/ems/addEmployee"><button >
+        Add Employee
+      </button>
+    </a>
+    </span>
+    <table class="table caption-top">
+        <!-- <caption>Employee Details</caption> -->
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">email</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Department</th>
+            <th scope="col"> Action</th>
+            </tr>
+        </thead>
+        <tbody>
+         
+            <% list.forEach(function(elmt,index) { %>
+              <tr>
+              <th scope="row"><%= index+1%></th>
+            <td><%= elmt.first_name %></td>
+            <td><%=elmt.last_name%></td>
+            <td><%=elmt.email%></td>
+            <td><%=elmt.dob.getDate()+"/"+elmt.dob.getMonth()+"/"+elmt.dob.getFullYear()%></td>
+            <td><%=elmt.department%></td>
+            <td>
+              <a href="/ems/getEmployee/<%=elmt._id%>" ><button>Edit</button></a>
+              <a href="/ems/delete/<%=elmt._id%>" onclick="return confirm('Are you sure to delete this record ?');"><button>Delete</button></td>
+          </tr>
+              <% }); %>
+            
+          
+          <!-- <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr> -->
+        </tbody>
+      </table> 
+</body>
+</html>
